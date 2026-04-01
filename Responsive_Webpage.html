@@ -1,0 +1,155 @@
+
+<html>
+<head>
+<style>
+.container{
+display:grid;
+grid-template-areas:
+"header header"
+"nav nav"
+"aside main"
+"footer footer";
+grid-template-rows:90px 40px 1fr 50px;
+grid-template-columns:200px 1fr;
+height:100vh;
+}
+header{
+grid-area:header;
+background-color:rgba(128, 0, 32, 1);
+color:black;
+text-align:center;
+font-family:algerian;
+}
+footer
+{
+grid-area:footer;
+background-color:rgba(128, 0, 32, 1);
+text-align:center;
+color:white;
+font-family:verdana;
+padding:10px;
+}
+nav{
+grid-area:nav;
+background-color:grey;
+color:brown;
+}
+nav ul{
+list-style:none;
+display:flex;           
+justify-content:center; 
+
+}
+nav ul li a{
+            color:black;
+            font-weight:700;
+        }
+nav ul li{
+
+margin:0 35px;
+
+}
+aside{
+grid-area:aside;
+background-color:rgba(54, 69, 79, 1);
+color:black;
+padding:20px;
+text-align:center;
+
+}
+aside h3{
+color:white;
+margin-bottom:20px;
+font-family:argentina;
+}
+.two{
+list-style:none;
+text-align:left;
+font-variant:small-caps;
+margin-bottom:10px;
+color:black;
+
+}
+
+aside ul li{
+color:black;
+
+font-size:16px;
+text-align:left;
+margin-bottom:25px;
+margin-left:10px;
+
+}
+
+main{
+grid-area:main;
+padding:20px;
+background-color:rgba(250, 235, 215, 1);
+text-align:justify;
+}
+@media(max-width:768px){
+
+.container{
+display:grid;
+grid-template-areas:
+"header"
+"nav"
+"main"
+"aside"
+"footer";
+grid-template-rows:auto;
+grid-template-columns:1fr;
+}
+nav ul{
+flex-direction:column;
+align-items:center;
+}
+nav ul li{
+margin:10px 0;
+}
+aside ul{
+text-align:center;
+}
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+<header>
+<h2>Pinterest</h2>
+<h5>Using CSS</h5>
+</header>
+
+<nav>
+<ul type="none">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Service</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<aside>
+<h3>Side bar</h3>
+<ul class="two">
+<li>Synopsis</li>
+<li>Cast</li>
+<li>Crew</li>
+<li>Climax</li>
+</ul>
+
+</aside>
+<main>
+<p>Percy Jackson & the Olympians: The Lightning Thief is a fantasy adventure movie based on the novel by Rick Riordan. The story follows a teenage boy named Percy Jackson, who discovers that he is not an ordinary human but the son of the Greek god Poseidon. Percy has always struggled in school and often gets into trouble, but his life changes when he learns about his true identity as a demigod.Percy is taken to Camp Half-Blood, a safe place where children of Greek gods are trained to control their powers and protect themselves from monsters. Soon, Percy is accused of stealing the powerful lightning bolt belonging to Zeus, the king of the gods. 
+<br><br>
+          To prevent a war among the gods, Percy goes on a dangerous quest to find the stolen bolt and prove his innocence.During his journey, Percy is joined by his friends Annabeth Chase and Grover Underwood. Together they travel across the United States while facing many mythical creatures, including Medusa and other monsters from Greek mythology. Throughout the adventure, Percy learns to believe in himself and use his powers wisely.
+The movie combines action, fantasy, and humor while introducing audiences to the exciting world of Greek mythology and heroic adventures. It also highlights themes of friendship, bravery, and discovering one’s true identity.
+</p>
+</main>
+<footer>
+<p>&copy;2026 Pinterest|All Rights Reserved</p>
+</footer>
+</body>
+</html>
